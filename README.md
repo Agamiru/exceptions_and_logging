@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 
 
 
-2. Without logging config.
+2. Subclass our ```ApplicationErrors``` to create your custom exceptions.
 
 ```python
 # your_app.exceptions.py (or wherever your app exceptions are)
@@ -83,7 +83,7 @@ When this error is raised:
 
 
 
-3. With Logging Config
+3. You can use your own logging config file with any of your custom exceptions.
 
 ```python
 # your_app.exceptions.py (or wherever your app exceptions are)
@@ -91,7 +91,7 @@ When this error is raised:
 from exceptions_and_logging.exceptions import ApplicationErrors
 
 # Path to your logging config file
-module_dir = os.path.dirname(__file__)
+module_dir = os.path.dirname(__file__)  # Assuming config file is in current directory
 config_file = os.path.join(module_dir, "myconfig.yaml")
 
 class MyCustomException(ApplicationErrors):
