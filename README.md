@@ -15,7 +15,7 @@ A **Django app** for logging custom application errors on the server side and al
 
 In your virtual environment run:
 
-```pip install exceptions_and_logging``` 
+```pip install exceptions-and-logging``` 
 
 
 
