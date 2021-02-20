@@ -1,0 +1,1 @@
+default_app_config = "exceptions_and_logging.apps.ExceptionsAndLoggingConfig"

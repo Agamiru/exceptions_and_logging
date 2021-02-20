@@ -1,0 +1,31 @@
+
+version: 1
+
+formatters:
+  default:
+    (): exceptions_and_logging.logging_settings.DefaultFormatter
+    format: |
+      %(asctime)s - APPLICATION ERROR - %(levelname)s
+      Error Type: %(err_type)s
+      Error Message: %(message)s
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: default
+    stream: ext://sys.stdout
+
+  file:
+    class: logging.FileHandler
+    formatter: default
+    filename: application.log
+    encoding: utf-8
+
+loggers:
+  default_logger:
+    level: ERROR
+    handlers: [console, file]
+
+  root:
+    level: DEBUG
+    handlers: [console]
