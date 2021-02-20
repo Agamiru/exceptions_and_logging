@@ -158,4 +158,18 @@ class MyCustomException(ApplicationErrors):
   }
   ```
 
+  Generated log on the server console (stdout):
+
+  ```
+  02/15/2021 04:30:34 PM - APPLICATION ERROR - ERROR
+  Error Type: MyCustomException
+  User Email: name@gmail.com
+  User ID: id4
+  Error Message: This item: 'SomeItem' isn't supposed to be null
+  Traceback (most recent call last):
+    # Bunch of traceback info
+    ...
+  
+  ```
+
   
