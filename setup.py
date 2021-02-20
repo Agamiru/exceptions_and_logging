@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="exceptions_and_logging",
-    version="0.0.1",
+    version="0.0.2",
     author="Chidi Nnadi",
     author_email="chidinnaemekannadi@gmail.com",
     description="A Django app for logging custom application errors",
