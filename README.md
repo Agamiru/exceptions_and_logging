@@ -1,6 +1,6 @@
 # exceptions_and_logging
 
-A **Django app** for logging custom application errors on the server side and also spits out JSON error info on the client side. You basically subclass our ```ApplicationErrors``` class and the rest is done for you.
+A **Django app** for logging custom application errors on the server side. It also spits out JSON error info on the client side. You basically subclass our ```ApplicationErrors``` class and the rest is done for you.
 
 
 
