@@ -28,6 +28,7 @@ In your virtual environment run:
 
 INSTALLED_APPS = [
     ...
+    
     'exceptions_and_logging',
 ]
 ```
