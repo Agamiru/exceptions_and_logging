@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 
 
 
-2. Subclass our ```ApplicationErrors``` to create your custom exceptions.
+2. Subclass our ```ApplicationErrors``` class to create your custom exceptions.
 
 ```python
 # your_app.exceptions.py (or wherever your app exceptions are)
